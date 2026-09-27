@@ -1,0 +1,270 @@
+<title>LinguaPractice — Spanish Practice in Telegram | touls.work</title>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yikqcj80tz");
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Outfit:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg:           #F5F6F9;
+  --surface:      #FFFFFF;
+  --text:         #1A1D2E;
+  --text-mid:     #4A5068;
+  --text-soft:    #7A809A;
+  --accent:       #2A6B4A;
+  --accent-light: #EAF4EE;
+  --cta:          #C86A20;
+  --cta-hover:    #A8561A;
+  --border:       #E0E2EE;
+  --hero-bg:      #1D2B4F;
+  --hero-text:    #EEF0F8;
+  --hero-soft:    #9AA3C2;
+  --hero-line:    rgba(255,255,255,0.12);
+  --feature-dot:  #2A6B4A;
+  --nav-h:        56px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:           #10121C;
+    --surface:      #181B2A;
+    --text:         #E8EAF4;
+    --text-mid:     #9098B8;
+    --text-soft:    #5A6080;
+    --accent:       #3D9E6A;
+    --accent-light: #162A20;
+    --cta:          #D4782A;
+    --cta-hover:    #B86420;
+    --border:       #252840;
+    --feature-dot:  #3D9E6A;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:           #10121C;
+  --surface:      #181B2A;
+  --text:         #E8EAF4;
+  --text-mid:     #9098B8;
+  --text-soft:    #5A6080;
+  --accent:       #3D9E6A;
+  --accent-light: #162A20;
+  --cta:          #D4782A;
+  --cta-hover:    #B86420;
+  --border:       #252840;
+  --feature-dot:  #3D9E6A;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+/* ── Nav ── */
+.nav { position: sticky; top: 0; z-index: 20; background: var(--hero-bg); border-bottom: 1px solid var(--hero-line); }
+.nav-inner { max-width: 1080px; margin: 0 auto; padding: 0 28px; height: var(--nav-h); display: flex; align-items: center; gap: 6px; }
+.nav-brand { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 17px; color: var(--hero-text); text-decoration: none; letter-spacing: -0.02em; margin-right: auto; }
+.nav-brand span { color: #6B8FE8; }
+.nav-link { font-family: 'Outfit', sans-serif; font-size: 13.5px; font-weight: 500; color: var(--hero-soft); text-decoration: none; padding: 6px 13px; border-radius: 6px; transition: color 0.15s, background 0.15s; }
+.nav-link:hover { color: var(--hero-text); background: rgba(255,255,255,0.07); }
+.nav-login-btn { color: var(--hero-text); border: 1px solid rgba(255,255,255,0.25); border-radius: 6px; margin-left: 4px; }
+.nav-login-btn:hover { background: rgba(255,255,255,0.12); }
+/* ── Buttons ── */
+.btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--cta); color: #fff; font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 600; padding: 12px 22px; border-radius: 8px; text-decoration: none; transition: background 0.15s; }
+.btn-primary:hover { background: var(--cta-hover); }
+.btn-ghost { display: inline-flex; align-items: center; gap: 6px; color: var(--hero-soft); font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 500; text-decoration: none; padding: 12px 4px; transition: color 0.15s; }
+.btn-ghost:hover { color: var(--hero-text); }
+/* ── Detail hero ── */
+.detail-hero { background: var(--hero-bg); padding: 76px 28px 84px; }
+.detail-hero-inner { max-width: 680px; margin: 0 auto; }
+.detail-hero .product-badge { margin-bottom: 24px; }
+.detail-hero h1 { font-family: 'Fraunces', Georgia, serif; font-size: clamp(34px, 5.5vw, 52px); font-weight: 300; line-height: 1.1; letter-spacing: -0.025em; color: var(--hero-text); text-wrap: balance; margin-bottom: 22px; }
+.detail-hero h1 em { font-style: italic; color: #A8C4FF; }
+.detail-hero-sub { font-size: 17.5px; line-height: 1.6; color: var(--hero-soft); max-width: 52ch; margin-bottom: 36px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+/* ── Section ── */
+.section { max-width: 1080px; margin: 0 auto; padding: 80px 28px; scroll-margin-top: var(--nav-h); }
+.section-label { font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+.section-heading { font-family: 'Outfit', sans-serif; font-size: clamp(22px, 3vw, 28px); font-weight: 700; letter-spacing: -0.02em; color: var(--text); text-wrap: balance; margin-bottom: 14px; }
+/* ── Product card ── */
+.product-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; }
+@media (max-width: 700px) { .product-card { grid-template-columns: 1fr; } }
+.product-card-body { padding: 40px; display: flex; flex-direction: column; }
+.product-badge { display: inline-flex; align-items: center; gap: 7px; background: var(--accent-light); color: var(--accent); font-family: 'Outfit', sans-serif; font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em; padding: 4px 11px; border-radius: 20px; width: fit-content; margin-bottom: 20px; }
+.product-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+.product-card-body h3 { font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -0.02em; color: var(--text); margin-bottom: 10px; }
+.product-card-body .tagline { font-size: 15.5px; color: var(--text-mid); margin-bottom: 28px; max-width: 38ch; }
+.feature-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; flex: 1; }
+.feature-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: var(--text-mid); }
+.feature-list li::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--feature-dot); flex-shrink: 0; margin-top: 7px; }
+.product-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--cta); color: #fff; font-family: 'Outfit', sans-serif; font-size: 14.5px; font-weight: 600; padding: 11px 20px; border-radius: 8px; text-decoration: none; width: fit-content; transition: background 0.15s; }
+.product-cta:hover { background: var(--cta-hover); }
+.product-cta-ghost { background: transparent; color: var(--cta); border: 1.5px solid var(--cta); }
+.product-cta-ghost svg path { stroke: var(--cta); }
+.product-cta-ghost:hover { background: color-mix(in srgb, var(--cta) 8%, transparent); }
+.product-card-visual { background: linear-gradient(145deg, #1D2B4F 0%, #243660 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 32px; min-height: 280px; }
+/* ── Mock chat ── */
+.mock-chat { width: 100%; max-width: 260px; display: flex; flex-direction: column; gap: 10px; }
+.chat-bubble { padding: 9px 13px; border-radius: 12px; font-family: 'Outfit', sans-serif; font-size: 12px; line-height: 1.45; max-width: 88%; }
+.chat-bubble.bot { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); align-self: flex-start; border-bottom-left-radius: 3px; }
+.chat-bubble.user { background: rgba(61,158,106,0.35); border: 1px solid rgba(61,158,106,0.45); color: rgba(255,255,255,0.92); align-self: flex-end; border-bottom-right-radius: 3px; }
+.chat-translation { font-size: 10.5px; color: rgba(255,255,255,0.42); margin-top: 2px; font-style: italic; padding-left: 2px; }
+.chat-score { display: inline-flex; align-items: center; gap: 5px; font-size: 10.5px; font-weight: 600; color: #6EDEA4; font-family: 'Outfit', sans-serif; align-self: flex-end; }
+/* ── Privacy blurb ── */
+.privacy-blurb { background: var(--surface); border-top: 1px solid var(--border); padding: 40px 28px; text-align: center; }
+.privacy-blurb p { max-width: 58ch; margin: 0 auto; font-size: 14.5px; color: var(--text-soft); line-height: 1.7; }
+.privacy-blurb a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+/* ── CTA section ── */
+.detail-cta-section { background: var(--hero-bg); padding: 72px 28px; text-align: center; }
+.detail-cta-inner { max-width: 560px; margin: 0 auto; }
+.detail-cta-inner h2 { font-family: 'Fraunces', Georgia, serif; font-size: clamp(26px, 4vw, 36px); font-weight: 300; color: var(--hero-text); margin-bottom: 14px; letter-spacing: -0.02em; }
+.detail-cta-inner h2 em { font-style: italic; color: #A8C4FF; }
+.detail-cta-inner p { font-size: 16px; color: var(--hero-soft); margin-bottom: 32px; max-width: 42ch; margin-left: auto; margin-right: auto; }
+.detail-cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+.detail-cta-note { font-size: 13px; color: var(--hero-soft); opacity: 0.7; }
+/* ── Footer ── */
+.footer { background: var(--hero-bg); border-top: 1px solid var(--hero-line); padding: 36px 28px; }
+.footer-inner { max-width: 1080px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.footer-brand { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 15px; color: var(--hero-text); text-decoration: none; }
+.footer-brand span { color: #6B8FE8; }
+.footer-links { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+.footer-links a { font-size: 13.5px; color: var(--hero-soft); text-decoration: none; cursor: pointer; transition: color 0.15s; }
+.footer-links a:hover { color: var(--hero-text); }
+.footer-copy { width: 100%; font-size: 12.5px; color: rgba(154,163,194,0.5); margin-top: 8px; }
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .nav-inner { padding: 0 16px; gap: 2px; }
+  .nav-link { padding: 6px 10px; font-size: 13px; }
+  .detail-hero { padding: 48px 20px 56px; }
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 8px; }
+  .btn-primary { justify-content: center; padding: 15px 22px; font-size: 16px; }
+  .section { padding: 48px 16px; }
+  .product-card { border-radius: 10px; }
+  .product-card-body { padding: 24px 20px; }
+  .product-card-body h3 { font-size: 20px; }
+  .product-card-body .tagline { max-width: 100%; font-size: 15px; margin-bottom: 20px; }
+  .feature-list { gap: 8px; margin-bottom: 24px; }
+  .feature-list li { font-size: 14.5px; }
+  .product-cta { width: 100%; justify-content: center; padding: 14px 20px; font-size: 15px; }
+  .product-card-visual { min-height: 180px; padding: 28px 20px; }
+  .detail-cta-buttons { flex-direction: column; align-items: stretch; }
+  .detail-cta-buttons .product-cta { width: 100%; justify-content: center; }
+  .footer { padding: 28px 20px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .footer-links { flex-wrap: wrap; gap: 14px 20px; }
+  .footer-links a { font-size: 13px; }
+}
+@media (max-width: 380px) {
+  .nav-link.nav-hide-xs { display: none; }
+  .product-card-visual { display: none; }
+}
+</style>
+
+<!-- ── Nav ── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">touls<span>.work</span></a>
+    <a href="/" class="nav-link">← All tools</a>
+    <a href="mailto:info@touls.work" class="nav-link nav-hide-xs">Contact</a>
+    <a href="https://t.me/talkspaniol_bot" class="nav-link nav-login-btn" target="_blank" rel="noopener">Open Bot</a>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="detail-hero">
+  <div class="detail-hero-inner">
+    <div class="product-badge"><span class="dot"></span>Free Trial — Live on Telegram</div>
+    <h1>Spanish practice that<br><em>actually sticks.</em></h1>
+    <p class="detail-hero-sub">Real conversations, instant scoring, and feedback — entirely inside Telegram. The missing link between knowing a language and using it every day.</p>
+    <div class="hero-actions">
+      <a href="https://t.me/talkspaniol_bot" class="btn-primary" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.24 13.748l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.908.811z"/></svg>
+        Start practising — free
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ── -->
+<div class="section">
+  <p class="section-label">How it works</p>
+  <h2 class="section-heading">Structured practice, scored every time</h2>
+
+  <div class="product-card">
+    <div class="product-card-body">
+      <div class="product-badge"><span class="dot"></span>Conversation practice</div>
+      <h3>Talk. Get scored. Improve.</h3>
+      <p class="tagline">Every reply you send is graded 0–10 with instant feedback. No guessing whether your Spanish was correct.</p>
+      <ul class="feature-list">
+        <li>Conversational Spanish practice for anyone building real fluency</li>
+        <li>Instant scoring (0–10) and feedback on every response</li>
+        <li>English translation of every Spanish reply</li>
+        <li>Three difficulty levels: Easy, Moderate, Proficiency</li>
+        <li>10-exchange sessions with a cooldown — paced for daily habit building</li>
+        <li>Structured drills, grammar checks, and vocabulary building <span style="font-size:11.5px;font-weight:600;color:var(--accent);font-family:'Outfit',sans-serif;">Pro</span></li>
+        <li>Session stats and detailed progress tracking <span style="font-size:11.5px;font-weight:600;color:var(--accent);font-family:'Outfit',sans-serif;">Pro</span></li>
+      </ul>
+    </div>
+    <div class="product-card-visual">
+      <div class="mock-chat">
+        <div class="chat-bubble bot">
+          ¡Hola! ¿Cómo te llamas?
+          <div class="chat-translation">Hi! What is your name?</div>
+        </div>
+        <div class="chat-bubble user">Me llamo Priya. ¿Y tú?</div>
+        <div class="chat-score">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#6EDEA4" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4.5" stroke="#6EDEA4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Score: 9/10 · Great answer!
+        </div>
+        <div class="chat-bubble bot">
+          Me llamo Bot. ¡Mucho gusto, Priya!
+          <div class="chat-translation">My name is Bot. Nice to meet you, Priya!</div>
+        </div>
+        <div class="chat-bubble user">Mucho gusto también.</div>
+        <div class="chat-score">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#6EDEA4" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4.5" stroke="#6EDEA4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Score: 10/10 · Perfect!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── CTA ── -->
+<div class="detail-cta-section">
+  <div class="detail-cta-inner">
+    <h2>Try it now. <em>It's free.</em></h2>
+    <p>No account to create. Open the bot in Telegram and start your first session in seconds.</p>
+    <div class="detail-cta-buttons">
+      <a href="https://t.me/talkspaniol_bot" class="product-cta" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Start Practising
+      </a>
+    </div>
+    <p class="detail-cta-note">Free during trial. All features included.</p>
+  </div>
+</div>
+
+<!-- ── Privacy blurb ── -->
+<div class="privacy-blurb">
+  <p>LinguaPractice stores only your Telegram user ID and conversation messages from your current session. No real name, no email address, no payment details. Conversation data older than 7 days is automatically deleted. Questions? <a href="mailto:info@touls.work">info@touls.work</a>.</p>
+</div>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="/" class="footer-brand">touls<span>.work</span></a>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/ezeinvoice/">EzeInvoice</a>
+      <a href="mailto:info@touls.work">info@touls.work</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Citadel Consulting. All rights reserved.</p>
+  </div>
+</footer>
